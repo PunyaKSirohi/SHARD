@@ -1,7 +1,7 @@
 #include "network/node_client.hpp"
 #undef _WIN32_WINNT
 #define _WIN32_WINNT 0x0A00
-#include "api/httplib.h"
+#include "../external/httplib.h"
 #include <sstream>
 #include <stdexcept>
 #include <iomanip>

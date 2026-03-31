@@ -1,0 +1,32 @@
+# Compiled binaries
+*.exe
+*.o
+*.a
+build/
+build.log
+err.txt
+full_log.txt
+
+# httplib (downloaded, not source)
+shard-core/src/api/httplib.h
+shard-core/src/httplib.h
+
+# Environment files (contain secrets)
+shard-core/.env
+shard-node/.env
+shard-ui/.env
+
+# Keep .env.example files (they're templates, safe to commit)
+
+# Node modules
+shard-ui/node_modules/
+
+# Vite build output
+shard-ui/dist/
+
+# Test scratch file
+test.cpp
+
+# OS
+.DS_Store
+Thumbs.db

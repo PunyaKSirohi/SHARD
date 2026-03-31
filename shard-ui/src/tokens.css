@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --blue: #1B6CA8;
+  --ocean: #2E9EC1;
+  --teal: #2EC4A0;
+  --seafoam: #3DD6B5;
+  --mint: #A8EDE4;
+  --bg: #F7F9FB;
+  --surface: #FFFFFF;
+  --border: #E2EBF0;
+  --text: #0F1E2D;
+  --muted: #4A6275;
+  --hint: #8BA3B4;
+  --success: #2EC4A0;
+  --danger: #E05555;
+  --warn: #F0A500;
+  --grad: linear-gradient(90deg, #1B6CA8, #3DD6B5);
+  --grad-135: linear-gradient(135deg, #1B6CA8, #3DD6B5);
+  --shadow-card: 0 2px 12px rgba(30, 100, 160, 0.05);
+  --shadow-md: 0 4px 24px rgba(30, 100, 160, 0.10);
+  --radius: 8px;
+  --radius-card: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Shared button styles */
+.btn {
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: opacity 0.15s, filter 0.15s;
+}
+.btn:hover { filter: brightness(1.05); }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btn-primary {
+  background: var(--grad);
+  color: #fff;
+}
+.btn-secondary {
+  background: #fff;
+  border: 1px solid var(--ocean);
+  color: var(--ocean);
+}
+.btn-danger {
+  background: #FDE8E8;
+  color: var(--danger);
+}
+
+/* Shared input styles */
+.input {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 9px 12px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+  outline: none;
+  width: 100%;
+  transition: border-color 0.15s;
+}
+.input:focus { border-color: var(--ocean); }
+.input-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Shared card */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 16px;
+  box-shadow: var(--shadow-card);
+}
